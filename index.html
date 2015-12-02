@@ -8,8 +8,8 @@ title: Welcome!
   {% assign release = site.github.releases[0] %}
   <p>
     Latest release:
-    <strong><a href="{{release.url}}">{{release.tag_name}}</a></strong>
-    ({{release.published_at | date: '%B %e, %Y'}})
+    <strong><a href="{{release.html_url}}">{(release.tag_name}}</a></strong>
+    ({{release.published_at | date: '%B %e, %Y' }})
   </p>
 {% endif %}
 
